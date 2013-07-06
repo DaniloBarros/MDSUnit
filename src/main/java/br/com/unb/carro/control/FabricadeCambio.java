@@ -6,15 +6,21 @@ public class FabricadeCambio {
 
 	public Cambio fabricarCambio(String tipo) {
 		
-		switch (tipo) {
-		case "Manual":
+		if(tipo.equalsIgnoreCase("Manual"))
+		{
 			return new Cambio(tipo);
-		
-		case "Automático":
-			return new Cambio(tipo);
+		}
+		else
+		{
+			if(tipo.equalsIgnoreCase("Automático"))
+			{
 			
-		default:
-			return null;
+				return new Cambio(tipo);
+			}
+			else
+			{
+				return null;
+			}
 		}
 	}
 

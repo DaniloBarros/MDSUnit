@@ -2,9 +2,9 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>Carro</groupId>
-  <artifactId>br.com.carro</artifactId>
-  <version>0.0.2</version>
+  <groupId>br.com.unb</groupId>
+  <artifactId>Carro</artifactId>
+  <version>1.0.0</version>
   <name>Fábrica de Carros</name>
   <url>http://github.com</url>
   <properties>
@@ -20,8 +20,14 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.8</version>
+      <version>4.11</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-all</artifactId>
+      <version>1.8.4</version>
+      <scope>compile</scope>
     </dependency>
   </dependencies>
   <repositories>
@@ -64,7 +70,7 @@
       </testResource>
     </testResources>
     <directory>C:\Users\Guilherme\Documents\GitHub\MDSUnit\target</directory>
-    <finalName>br.com.carro-0.0.2</finalName>
+    <finalName>Carro-1.0.0</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -239,7 +245,7 @@
           </execution>
         </executions>
         <configuration>
-          <argLine>-javaagent:C:\Users\GUILHE~1\AppData\Local\Temp\jacocoagent3503280438567101837.jar=destfile=target/jacoco.exec,excludes=*_javassist_*</argLine>
+          <argLine>-javaagent:C:\Users\GUILHE~1\AppData\Local\Temp\jacocoagent3807535527370977585.jar=destfile=target/jacoco.exec,excludes=*_javassist_*</argLine>
           <testFailureIgnore>true</testFailureIgnore>
         </configuration>
       </plugin>

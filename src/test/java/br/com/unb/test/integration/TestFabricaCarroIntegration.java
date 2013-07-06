@@ -124,6 +124,19 @@ public class TestFabricaCarroIntegration {
 		}
 	}
 	
+	
+	@Test
+	public void testCarrosDiferentes()
+	{
+String modelo = "Sporting Automático";
+		
+		carro = fabricaCarro.montarCarro(modelo);
+		Carro carro2 = fabricaCarro.montarCarro(modelo);
+		
+		Assert.assertNotSame(carro, carro2);
+		Assert.assertNotSame(carro.getChassi(), carro2.getChassi());
+	
+	}
 
 	
 

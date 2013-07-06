@@ -4,7 +4,7 @@
 
   <groupId>br.com.unb</groupId>
   <artifactId>Carro</artifactId>
-  <version>0.0.2</version>
+  <version>1.0.0</version>
   <packaging>jar</packaging>
 
   <name>Fábrica de Carros</name>
@@ -24,8 +24,6 @@
 		<version>1.8.4</version>
 	</dependency>
   </dependencies>
-  
-  
   <properties>
     <!-- <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> -->
 	<sonar.language>java</sonar.language>
