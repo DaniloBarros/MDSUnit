@@ -25,13 +25,21 @@ public class TestFabricaCarroIntegration {
 	
 
 	
+	/**
+	 * Testar o Modelo Attractive 1000
+	 */
 	@Test
 	public void testAttractive1000 ()
 	{
 		String modelo = "Attractive 1.0";
 		
 		carro = fabricaCarro.montarCarro(modelo);
+		
+		//Se Objeto foi instanciado
 		Assert.assertNotNull(carro);
+		
+		
+		//Testando se o Modelo do Carro é o mesmo 
 		Assert.assertTrue(carro.getModelo().equals(modelo));
 		
 		
@@ -41,7 +49,10 @@ public class TestFabricaCarroIntegration {
 			Assert.assertEquals(13, carro.getRodas().get(i).getAro());
 		}
 		
+		//Testando o Motor do Carro se é 1000
 		Assert.assertEquals(1000, carro.getMotor().getCilindrada());
+		
+		//Testando se o Cambio é Manual
 		Assert.assertEquals("Manual", carro.getTransmissao().getTipo());
 		
 	}
@@ -111,6 +122,8 @@ public class TestFabricaCarroIntegration {
 		
 	}
 	
+	
+	//Testando um Carro fora dos Modelos previstos 
 	@Test
 	public void testCarroNulo()
 	{
@@ -125,6 +138,8 @@ public class TestFabricaCarroIntegration {
 	}
 	
 	
+	
+	//Testando dois objetos diferentes do mesmo modelo
 	@Test
 	public void testCarrosDiferentes()
 	{
