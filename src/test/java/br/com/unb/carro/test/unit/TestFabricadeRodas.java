@@ -32,7 +32,7 @@ public class TestFabricadeRodas {
 	{
 		aro = 28;
 		roda = fabricadeRodas.fabricarRoda(aro); 
-		Assert.assertNull("A roda foi fabricada", roda);
+		Assert.assertNull("Foi fabricada uma roda nula", roda);
 	}
 	
 	@Test
