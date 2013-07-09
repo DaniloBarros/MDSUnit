@@ -2,7 +2,7 @@
 
 ## Estudo de Caso
 
-A Fiat produz três tipos de Novo Pálio:
+A Montadora MDS produz quatro modelos de Carro:
 
 Attractive com motor 1.0 e Câmbio Manual
 Attractive com motor 1.4 e Câmbio Manual
