@@ -1,13 +1,14 @@
-package br.com.unb.carro.test.unit;
+package br.com.carro.carro.test.unit;
 
 
 
+import br.com.unb.carro.control.FabricadeMotores;
+import br.com.unb.carro.model.Motor;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import br.com.unb.carro.control.FabricadeMotores;
-import br.com.unb.carro.model.Motor;
+
 
 public class TestFabricadeMotores {
 

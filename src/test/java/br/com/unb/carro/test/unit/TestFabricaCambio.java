@@ -1,11 +1,10 @@
-package br.com.unb.carro.test.unit;
-
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+package br.com.carro.carro.test.unit;
 
 import br.com.unb.carro.control.FabricadeCambio;
 import br.com.unb.carro.model.Cambio;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 
 /**
  * 

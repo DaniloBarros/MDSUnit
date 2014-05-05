@@ -1,4 +1,4 @@
-package br.com.unb.test.integration;
+package br.com.carro.test.integration;
 
 import org.junit.Assert;
 import org.junit.Before;
