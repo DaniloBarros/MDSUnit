@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>br.com.unb</groupId>
   <artifactId>Carro</artifactId>
-  <version>1.0.0</version>
+  <version>2.0.0</version>
   <name>Fábrica de Carros</name>
   <url>http://github.com</url>
   <properties>
@@ -70,7 +70,7 @@
       </testResource>
     </testResources>
     <directory>C:\Users\Guilherme\Documents\GitHub\MDSUnit\target</directory>
-    <finalName>Carro-1.0.0</finalName>
+    <finalName>Carro-2.0.0</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -245,7 +245,7 @@
           </execution>
         </executions>
         <configuration>
-          <argLine>-javaagent:C:\Users\GUILHE~1\AppData\Local\Temp\jacocoagent8648409537905092295.jar=destfile=target/jacoco.exec,excludes=*_javassist_*</argLine>
+          <argLine>-javaagent:C:\Users\GUILHE~1\AppData\Local\Temp\jacocoagent2377131283584226493.jar=destfile=target/jacoco.exec,excludes=*_javassist_*</argLine>
           <testFailureIgnore>true</testFailureIgnore>
         </configuration>
       </plugin>

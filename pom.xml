@@ -4,11 +4,12 @@
 
   <groupId>br.com.unb</groupId>
   <artifactId>Carro</artifactId>
-  <version>1.0.0</version>
+  <version>3.0.0</version>
   <packaging>jar</packaging>
 
   <name>Fábrica de Carros</name>
-  <url>http://github.com</url>
+    <url>https://github.com/gbrego/MDSUnit</url>
+
 
     <build>
         <plugins>
@@ -23,6 +24,11 @@
             </plugin>
         </plugins>
     </build>
+
+
+  
+  
+
   <dependencies>
 
 
@@ -48,6 +54,8 @@
 
 	<!-- Tells Sonar where the unit tests execution reports are -->
 	<sonar.surefire.reportsPath>\target\surefire-reports</sonar.surefire.reportsPath>
+	
+	 <sonar.jacoco.itReportPath>${project.basedir}/target/jacoco.exec</sonar.jacoco.itReportPath>
 	
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
 	
