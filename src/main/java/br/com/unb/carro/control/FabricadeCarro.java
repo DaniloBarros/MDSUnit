@@ -28,23 +28,8 @@ public class FabricadeCarro {
 		
 		if(modelo.equalsIgnoreCase("Attractive 1.0"))
 		{
-			fabricadeMotores = new FabricadeMotores();
-			fabricadeRoda = new FabricadeRodas();
-			fabricadeCambio = new FabricadeCambio();
-			
-			
-			Motor motor = fabricadeMotores.fabricarMotor(1000);
-			
-			ArrayList<Roda> rodas = new ArrayList<Roda>();
-			
-			for(int i=0; i<4; i++)
-			{
-				rodas.add(fabricadeRoda.fabricarRoda(13));
-			}
-			Cambio cambio = fabricadeCambio.fabricarCambio("Manual");
-			
-			
-			return juntarPecas(modelo,rodas,motor,cambio);
+
+			return juntarPecas(modelo,fabricarRoda(13),fabricarMotor(1000),fabricarCambio("Manual"));
 			
 			
 			
@@ -52,67 +37,51 @@ public class FabricadeCarro {
 		
 		if (modelo.equalsIgnoreCase("Attractive 1.4"))
 		{
-			fabricadeMotores = new FabricadeMotores();
-			fabricadeRoda = new FabricadeRodas();
-			fabricadeCambio = new FabricadeCambio();
-			
-			
-			Motor motor = fabricadeMotores.fabricarMotor(1400);
-			
-			ArrayList<Roda> rodas = new ArrayList<Roda>();
-			
-			for(int i=0; i<4; i++)
-			{
-				rodas.add(fabricadeRoda.fabricarRoda(15));
-			}
-			Cambio cambio = fabricadeCambio.fabricarCambio("Manual");
-			
-			return juntarPecas(modelo,rodas,motor,cambio);
+			return juntarPecas(modelo,fabricarRoda(15),fabricarMotor(1400),fabricarCambio("Manual"));
 		}
 		
 		
 		if(modelo.equalsIgnoreCase("Sporting Manual"))
 		{
-			fabricadeMotores = new FabricadeMotores();
-			fabricadeRoda = new FabricadeRodas();
-			fabricadeCambio = new FabricadeCambio();
-			
-			
-			Motor motor = fabricadeMotores.fabricarMotor(1600);
-			
-			ArrayList<Roda> rodas = new ArrayList<Roda>();
-			
-			for(int i=0; i<4; i++)
-			{
-				rodas.add(fabricadeRoda.fabricarRoda(16));
-			}
-			Cambio cambio = fabricadeCambio.fabricarCambio("Manual");
-			
-			return juntarPecas(modelo,rodas,motor,cambio);
+			return juntarPecas(modelo,fabricarRoda(16),fabricarMotor(1600),fabricarCambio("Manual"));
 		
 		}
 		
 		if(modelo.equalsIgnoreCase("Sporting Automático"))
 		{
-			fabricadeMotores = new FabricadeMotores();
-			fabricadeRoda = new FabricadeRodas();
-			fabricadeCambio = new FabricadeCambio();
-			
-			
-			Motor motor = fabricadeMotores.fabricarMotor(1600);
-			
-			ArrayList<Roda> rodas = new ArrayList<Roda>();
-			
-			for(int i=0; i<4; i++)
-			{
-				rodas.add(fabricadeRoda.fabricarRoda(16));
-			}
-			Cambio cambio = fabricadeCambio.fabricarCambio("Automático");
-			
-			return juntarPecas(modelo,rodas,motor,cambio);
+			return juntarPecas(modelo,fabricarRoda(16),fabricarMotor(1600),fabricarCambio("Automático"));
 		}
 		return null;
 		
+	}
+
+
+
+	private Cambio fabricarCambio(String tipo) {
+		fabricadeCambio = new FabricadeCambio();
+		Cambio cambio = fabricadeCambio.fabricarCambio(tipo);
+		return cambio;
+	}
+
+
+
+	private ArrayList<Roda> fabricarRoda(int aro) {
+		fabricadeRoda = new FabricadeRodas();
+
+		ArrayList<Roda> rodas = new ArrayList<Roda>();
+		
+		for(int i=0; i<4; i++)
+		{
+			rodas.add(fabricadeRoda.fabricarRoda(aro));
+		}
+		return rodas;
+	}
+
+
+
+	private Motor fabricarMotor(int cilindrada) {
+		fabricadeMotores = new FabricadeMotores();
+		return fabricadeMotores.fabricarMotor(cilindrada);
 	}
 
 
